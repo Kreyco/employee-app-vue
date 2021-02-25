@@ -1,0 +1,17 @@
+{
+  "employeelist": {
+    "title": {
+      "status": "Status"
+    }
+  },
+  "readform": {
+    "label": {
+      "user_id": "User ID",
+      "user_placeholder": "Enter user ID"
+    },
+    "title": {
+      "consultation": "Consultation",
+      "get_employees": "Get employee(s)"
+    }
+  }
+}

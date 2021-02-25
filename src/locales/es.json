@@ -1,0 +1,12 @@
+{
+  "readform": {
+    "label": {
+      "user_id": "ID del usuario",
+      "user_placeholder": "Enter user ID"
+    },
+    "title": {
+      "consultation": "Consulta",
+      "get_employees": "Obtener empleado(s)"
+    }
+  }
+}
