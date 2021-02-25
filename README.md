@@ -1,4 +1,4 @@
-# employee-app
+# Employee-app
 
 ## Project setup
 ```

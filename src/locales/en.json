@@ -1,6 +1,13 @@
 {
   "employeelist": {
     "title": {
+      "name": "Name",
+      "contract_type_name": "Contract type name",
+      "hourly_salary": "Hourly salary",
+      "id": "ID",
+      "monthly_salary": "Monthly salary",
+      "role_description": "Role description",
+      "role_name": "Role name",
       "status": "Status"
     }
   },

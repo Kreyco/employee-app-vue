@@ -36,8 +36,7 @@ export default {
       console.log('execute read');
 
       await window.axios
-        // .get("api/employees")
-        .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+        .get("http://masglobaltestapi.azurewebsites.net/api/Employees")
         .then(response => {
           this.products = response.data;
 
