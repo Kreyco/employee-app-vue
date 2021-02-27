@@ -24,7 +24,13 @@
 <script>
 export default {
   name: "EmployeeList",
-  props: {},
+  components: {},
+  props: {
+    employees: {
+      type: Array,
+      default: () => []
+    }
+  },
   data() {
     return {
       loading: {
@@ -38,32 +44,15 @@ export default {
         this.$t("employeelist.title.hourly_salary"),
         this.$t("employeelist.title.monthly_salary"),
         this.$t("employeelist.title.contract_type_name"),
-      ],
-      employees: [],
+      ]
     };
   },
   methods: {
     loadingState(type, state = true) {
       this.loading[type] = state;
-    },
-    async read() {
-      console.log("execute read");
-
-      await window.axios
-        .get("http://masglobaltestapi.azurewebsites.net/api/Employees")
-        .then((response) => {
-          this.employees = response.data;
-
-          this.loadingState("data", false);
-        })
-        .catch((error) => {
-          console.log(error.response.data);
-        });
-    },
+    }
   },
-  created() {
-    this.read();
-  },
+  created() {},
 };
 </script>
 

@@ -1,19 +1,16 @@
 <template>
   <div id="app" class="container-fluid">
-    <ReadForm/>
-    <EmployeeList/>
+    <EmployeeView/>
   </div>
 </template>
 
 <script>
-import ReadForm from './components/ReadForm.vue'
-import EmployeeList from './components/EmployeeList.vue'
+import EmployeeView from './views/EmployeeView'
 
 export default {
   name: 'App',
   components: {
-    ReadForm,
-    EmployeeList
+    EmployeeView
   }
 }
 </script>
