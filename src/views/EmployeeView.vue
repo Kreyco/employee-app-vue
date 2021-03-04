@@ -33,8 +33,6 @@ export default {
       employeeAPI
         .get()
         .then((response) => {
-          console.log('read');
-          console.log(response.data);
           this.employees = response.data;
 
           this.loadingState("data", false);
@@ -51,11 +49,9 @@ export default {
       employeeAPI
       .getById(value)
       .then((response) => {
-        console.log('search Employee');
-        console.log(response.data);
         this.employees = response.data;
 
-          this.loadingState("data", false);
+        this.loadingState("data", false);
       })
       .catch((error) => {
           console.log(error.response.data);
@@ -75,18 +71,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
