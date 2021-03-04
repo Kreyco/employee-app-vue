@@ -10,7 +10,7 @@
               {{ $t("readform.label.user_id") }}
             </label>
             <input
-              v-model="userId"
+              v-model.number="userId"
               id="user_id"
               class="form-control"
               type="text"

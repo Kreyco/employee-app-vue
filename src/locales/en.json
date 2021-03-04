@@ -2,6 +2,7 @@
   "employeelist": {
     "title": {
       "name": "Name",
+      "calculatedAnnualSalary": "Calculated annual Salary",
       "contract_type_name": "Contract type name",
       "hourly_salary": "Hourly salary",
       "id": "ID",

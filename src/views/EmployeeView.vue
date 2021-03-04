@@ -33,6 +33,8 @@ export default {
       employeeAPI
         .get()
         .then((response) => {
+          console.log('read');
+          console.log(response.data);
           this.employees = response.data;
 
           this.loadingState("data", false);
@@ -42,10 +44,15 @@ export default {
         });
     },
     searchEmployee(value) {
+      if (value != null && !this.checkForm(value)) {
+        return false;
+      }
+
       employeeAPI
-      // .getById(value)
-      .get()
+      .getById(value)
       .then((response) => {
+        console.log('search Employee');
+        console.log(response.data);
         this.employees = response.data;
 
           this.loadingState("data", false);
@@ -53,6 +60,11 @@ export default {
       .catch((error) => {
           console.log(error.response.data);
       });
+    },
+    checkForm(value) {
+      let regex = /^\d+$/gm;
+
+      return regex.test(value);
     }
   },
   created() {

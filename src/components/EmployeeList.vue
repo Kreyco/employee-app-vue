@@ -1,4 +1,5 @@
 <template>
+<div><span>{{ employees}} </span>
   <table class="table table-hover">
     <thead>
       <tr>
@@ -15,10 +16,12 @@
         <th>{{ employee.roleDescription || "" }}</th>
         <th>{{ employee.hourlySalary }}</th>
         <th>{{ employee.monthlySalary }}</th>
+        <th>{{ employee.calculatedAnnualSalary || 0 }}</th>
         <th>{{ employee.contractTypeName }}</th>
       </tr>
     </tbody>
   </table>
+</div>
 </template>
 
 <script>
@@ -27,7 +30,7 @@ export default {
   components: {},
   props: {
     employees: {
-      type: Array,
+      type: [Object, Array],
       default: () => []
     }
   },
@@ -43,6 +46,7 @@ export default {
         this.$t("employeelist.title.role_description"),
         this.$t("employeelist.title.hourly_salary"),
         this.$t("employeelist.title.monthly_salary"),
+        this.$t("employeelist.title.calculatedAnnualSalary"),
         this.$t("employeelist.title.contract_type_name"),
       ]
     };

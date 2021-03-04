@@ -1,4 +1,17 @@
 {
+  "employeelist": {
+    "title": {
+      "name": "Nombre",
+      "calculatedAnnualSalary": "Salario anual calculado",
+      "contract_type_name": "Nombre de tipo de contrato",
+      "hourly_salary": "Salario por hora",
+      "id": "ID",
+      "monthly_salary": "Salario mensual",
+      "role_description": "Descripción del rol",
+      "role_name": "Nombre del rol",
+      "status": "Estado"
+    }
+  },
   "readform": {
     "label": {
       "user_id": "ID del usuario",
